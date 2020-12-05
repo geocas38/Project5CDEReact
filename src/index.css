@@ -12,20 +12,71 @@ code {
     monospace;
 }
 
-.block1 {
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.list {
+    text-align: left;
+}
+
+h2 {
+    background-color: bisque;
+}
+
+.voteSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#versions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.version {
+    background-color: white;
+    color: black;
+    font-size: 20em;
+    border-radius: 10px;
+    /* top, right, bottom, left */
+    padding: 0px 50px 0px 50px;
+    font-size: large;
+    margin: 0.5%;
+}
+
+.voteCard {
+    background-color: white;
+    color: black;
+    font-size: 20em;
+    border-radius: 10px;
+    /* top, right, bottom, left */
+    padding: 0px 50px 0px 50px;
+    font-size: large;
+    margin: 0.5%;
+}
+
+.labelCard {
+    background-color: grey;
+    color: white;
+    border-radius: 10px;
+    /* top, right, bottom, left */
+    padding: 0px 50px 50px 50px;
+    font-size: large;
+  }
+
+.CDECard {
   background-color: white;
   color: black;
   border-radius: 10px;
   /* top, right, bottom, left */
   padding: 0px 50px 50px 50px;
-}
-
-.block2 {
-  background-color: grey;
-  color: white;
-  border-radius: 10px;
-  /* top, right, bottom, left */
-  padding: 0px 50px 50px 50px;
+  font-size: large;
+  margin: 1%;
 }
 
 h3 {
