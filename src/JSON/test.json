@@ -4,6 +4,32 @@
     "title": "Add Info about the new project", 
     "done": true,
     "label": "Self-Identified Gender",
-    "name1": "Gender Identity",
-    "spec1": "What terms best express how you describe your gender identity?"
-} 
+
+    "CDE1": "Gender Identity",
+    "spec1": "1a. What terms best express how you describe your gender identity? (Check all that apply)",
+    "list1": [
+        "Man",
+        "Woman",
+        "Non-binary",
+        "Transgender",
+        "None of these describe me, and I’d like to consider additional options",
+        "Prefer not to answer"
+    ],
+    "collection1": "Self-Report",
+    "source1": "RADx [All of Us Research Program PPI]",
+    "definition1": "NCIt and CDISC:  Gender Identity (Code C158277) – Definition:  A person's internally held sense of their gender, which may or may not correspond to the individual's genotypic or phenotypic sex.",
+
+    "CDE2": "Gender Identity (Transgender/Non-binary Identity)",
+    "spec2": "1b. Are any of these a closer description to your gender identity?",
+    "list2": [
+        "Trans man/Transgender Man/FTM",
+        "Trans woman/Transgender Woman/MTF",
+        "Genderqueer",
+        "Genderfluid",
+        "Gender variant",
+        "Questioning or unsure of your gender identity"
+    ],
+    "collection2": "Self-Report",
+    "source2": "RADx [NIH SGMRO]",
+    "definition2": "NCIt and CDISC:  Gender Identity (Code C158277) – Definition:  A person's internally held sense of their gender, which may or may not correspond to the individual's genotypic or phenotypic sex."
+}
