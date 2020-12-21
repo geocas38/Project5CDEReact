@@ -6,11 +6,13 @@ import jsonObject from '../JSON/CDEContent.json'
 
 interface CDEProps {
   number?: number;
+  CDE: typeof jsonObject;
 }
 
 class CDECard extends React.Component<CDEProps> {
     render() {
-        const elements = jsonObject.SetData['Self-Identified Gender'].firstCDE.list;
+        const currCDE = this.props.CDE;
+        const elements = currCDE.list;
         const list = []
 
         for (var i in elements) {
