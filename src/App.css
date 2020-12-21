@@ -31,7 +31,7 @@ code {
         monospace;
 }
 
-.cards {
+.CDEs {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -39,7 +39,7 @@ code {
     overflow-x: auto;
 }
 
-.cards > div {
+.CDEs > div {
     background-color: white;
 color: black;
 font-size: 20em;
@@ -51,16 +51,9 @@ margin: 0.5%;
 
 }
 
-
-
-.list {
-    text-align: left;
-}
-
 h2 {
     background-color: bisque;
 }
-
 
 #versions {
     display: flex;
@@ -69,17 +62,6 @@ h2 {
 }
 
 .version {
-    background-color: white;
-    color: black;
-    font-size: 20em;
-    border-radius: 10px;
-    /* top, right, bottom, left */
-    padding: 0px 50px 0px 50px;
-    font-size: large;
-    margin: 0.5%;
-}
-
-.voteCard {
     background-color: white;
     color: black;
     font-size: 20em;

@@ -7,23 +7,12 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
   
-code {
-font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-  
 h2 {
     background-color: bisque;
 }
   
 .list {
     text-align: left;
-} 
-  
-#versions {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
 }
   
 .version {
@@ -50,8 +39,7 @@ margin: 1%;
 h3 {
 text-align: left;
 }
-  
 
-.voteCount {
+.counterDisplay {
     background-color: whitesmoke;
 }

@@ -1,15 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './App.css';
-import jsonObject from './JSON/test.json'
 import CDECard from './components/CDE';
-import CDECard2 from './components/CDE2';
 import CSVReader from 'react-csv-reader'
+import jsonObject from './JSON/CDEContent.json'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Person Focused Set 2 (Marriage and Sex) Tier 2</h1>
+        <h1>{jsonObject.setTitle}</h1>
         <div id="versions">
             <p className="version">1.0</p>
             <p className="version">2.0</p>
@@ -18,38 +17,40 @@ function App() {
         </div>
         <CSVReader onFileLoaded={(data, fileInfo) => console.dir(data, fileInfo)} />
         <br/>
-        {createLabel1("Self-Identified Gender", "Something")}
-        {createLabel2("Sexual Orientation", "Something")}
-
-
+        {callCreateLabel()}
       </header>
     </div>
   );
 }
 
-function createLabel1(label: string, name: string) {
+function callCreateLabel() {
+    for (let key in Object.keys(jsonObject.SetData)) {
+        let CDEAmount = Object.keys(jsonObject.SetData)[key].length;
+        createLabel(key, CDEAmount)
+    }
+} 
+
+function createLabel(labelName: string, CDEAmount : number) {
     return (
       <section className="labelCard"> 
-            <h1>Label: {label}</h1>
-            <div className="cards">
-                <CDECard></CDECard>
-                <CDECard2></CDECard2>
-
-            </div>
+            <h1>Label: {labelName}</h1>
+            {createCDEs(CDEAmount)}
       </section>
     )
-  }
+}
 
-  function createLabel2 (label: string, name: string) {
+function createCDEs(CDEAmount : number) {
+    let CDEs = [];
+    for (let i = 0; i < CDEAmount; i++) {
+        CDEs.push(
+            <CDECard/>
+        );
+    }
     return (
-      <section className="labelCard"> 
-            <h1>Label: {label}</h1>
-            <div className="cards">
-                <CDECard></CDECard>
-                <CDECard2></CDECard2>
-            </div>
-      </section>
-    )
-  }
+        <div className="CDEs">
+            {CDEs}
+        </div>
+    );
+}
 
 export default App;

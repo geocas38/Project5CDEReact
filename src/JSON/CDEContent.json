@@ -1,0 +1,38 @@
+{
+    "setTitle": "Person Focused Set 2 (Marriage and Sex) Tier 2",
+
+    "SetData": {
+        "Self-Identified Gender" : {
+            "firstCDE" : {
+                "CDE": "Gender Identity",
+                "spec": "1a. What terms best express how you describe your gender identity? (Check all that apply)",
+                "list": [
+                    "Man",
+                    "Woman",
+                    "Non-binary",
+                    "Transgender",
+                    "None of these describe me, and I’d like to consider additional options",
+                    "Prefer not to answer"
+                ],
+                "collection": "Self-Report",
+                "source": "RADx [All of Us Research Program PPI]",
+                "definition": "NCIt and CDISC:  Gender Identity (Code C158277) – Definition:  A person's internally held sense of their gender, which may or may not correspond to the individual's genotypic or phenotypic sex."
+            },
+            "secondCDE" : {
+                "CDE": "Gender Identity (Transgender/Non-binary Identity)",
+                "spec": "1b. Are any of these a closer description to your gender identity?",
+                "list": [
+                    "Trans man/Transgender Man/FTM",
+                    "Trans woman/Transgender Woman/MTF",
+                    "Genderqueer",
+                    "Genderfluid",
+                    "Gender variant",
+                    "Questioning or unsure of your gender identity"
+                ],
+                "collection": "Self-Report",
+                "source": "RADx [NIH SGMRO]",
+                "definition": "NCIt and CDISC:  Gender Identity (Code C158277) – Definition:  A person's internally held sense of their gender, which may or may not correspond to the individual's genotypic or phenotypic sex."
+            }
+        }
+    }
+}
